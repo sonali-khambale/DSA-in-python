@@ -1,0 +1,12 @@
+// check whether the number is palindrome or not
+n = 1234
+num = n
+Result = 0
+while num > 0:
+  ld = num % 10
+  Result = (Result*10) + ld
+  num = num // 10
+if Result == n:
+  print("Number is palindrome")
+else:
+  print("Number is not palindrome")
