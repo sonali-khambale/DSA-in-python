@@ -7,4 +7,4 @@ while num > 0:
     count += 1
     num = num // 10   # fix here
 
-print("count of digits in number :",count)
+print(f"The digit in number are {count}")
