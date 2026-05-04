@@ -1,0 +1,12 @@
+n = 1634
+num = n
+Total = 0
+nod = len(str(n))
+while num > 0:
+  ld = num % 10
+  Total = Total + (ld**nod)
+  num = num // 10
+if Total == n:
+  print("Number is armstrong.")
+else:
+  print("Number is not armstrong.")
