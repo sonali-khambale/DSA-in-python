@@ -1,0 +1,17 @@
+# Second largest element in an array
+
+arr = [4, 7, 1, 9, 2, 5]
+
+largest = float('-inf')
+s_largest = float('-inf')
+
+for num in arr:
+    if num > largest:
+        s_largest = largest
+        largest = num
+
+    elif num > s_largest and num != largest:
+        s_largest = num
+
+print("Largest element:", largest)
+print("Second largest element:", s_largest)
